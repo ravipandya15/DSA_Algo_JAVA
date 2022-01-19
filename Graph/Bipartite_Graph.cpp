@@ -14,7 +14,7 @@ int main()
 // BFS
 // TC > O(N+E)
 // SC -> O(N+E) + O(N) + O(N)
-bool checkBFS(int node, vector<int> color, vector<int> adj[])
+bool checkBFS(int node, vector<int>& color, vector<int> adj[])
 {
     queue<int> q;
     q.push(node);
@@ -69,7 +69,7 @@ bool checkBipartite1(int V, vector<int> adj[])
 // DFS
 // TC > O(N+E)
 // SC -> O(N+E) + O(N) + O(N)
-bool checkDFS(int node, vector<int> color, vector<int> adj[])
+bool checkDFS(int node, vector<int>& color, vector<int> adj[])
 {
     if (color[node] == -1)
         color[node] = 1;

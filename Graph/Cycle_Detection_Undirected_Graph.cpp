@@ -12,7 +12,7 @@ int main()
 // BFS
 // TC -> O(N+E)
 // SC -> O(N+E) + O(N) + O(N)
-bool checkForCycle(int i, vector<int> visited, vector<int> adj[])
+bool checkForCycle(int i, vector<int>& visited, vector<int> adj[])
 {
     queue<pair<int, int>> q; // BFS
     q.push({i, -1});
@@ -60,7 +60,7 @@ bool isCycle_BFS(int V, vector<int> adj[])
 // DFS
 // TC -> O(N+E)
 // SC -> O(N+E) + O(N) + O(N)
-bool checkForCycle_DFS(int node, int parent, vector<int> visited, vector<int> adj[])
+bool checkForCycle_DFS(int node, int parent, vector<int>& visited, vector<int> adj[])
 {
     visited[node] = 1;
 

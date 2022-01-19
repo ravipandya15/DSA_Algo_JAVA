@@ -13,7 +13,7 @@ int main()
 // DFS
 // TC -> O(N + E)
 // SC -> O(N+E) + O(N) + O(N) + O(N)
-void findTopoSort(int node, stack<int> st, vector<int> visited, vector<int> adj[])
+void findTopoSort(int node, stack<int>& st, vector<int>& visited, vector<int> adj[])
 {
     visited[node] = 1;
 

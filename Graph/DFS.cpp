@@ -8,7 +8,7 @@ int main()
     return 0;
 }
 
-void DFS(int node, vector<bool> visited, vector<int> adj[], vector<int> dfs)
+void DFS(int node, vector<bool>& visited, vector<int> adj[], vector<int> dfs)
 {
     dfs.push_back(node);
     visited[node] = true;

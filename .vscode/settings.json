@@ -21,7 +21,8 @@
         "xhash": "cpp",
         "xtree": "cpp",
         "xlocale": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

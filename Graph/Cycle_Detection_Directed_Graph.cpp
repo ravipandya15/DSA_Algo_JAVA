@@ -57,7 +57,7 @@ bool isCycle_BFS(int V, vector<int> adj[])
 // DFS
 // TC -> O(N+E)
 // SC -> O(N+E) + O(N) + O(N)
-bool checkForCycle_DFS(int node, vector<int> vis, vector<int> dfsVis, vector<int> adj[])
+bool checkForCycle_DFS(int node, vector<int>& vis, vector<int>& dfsVis, vector<int> adj[])
 {
     vis[node] = 1;
     dfsVis[node] = 1;

@@ -22,7 +22,11 @@
         "xtree": "cpp",
         "xlocale": "cpp",
         "algorithm": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "xlocnum": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

@@ -63,8 +63,8 @@ bool subsetSumToK2(int n, int k, vector<int> &arr){
 }
 
 // Tabulation
-// TC -> O(N * target)
-// SC -> O(N) + O(N * target) 
+// TC -> O(N) + O(N * target)
+// SC -> O(N * target) 
 bool subsetSumToK3(int n, int k, vector<int> &arr){
     vector<vector<bool>> dp(n, vector<bool>(k+1, 0));
 
@@ -74,7 +74,7 @@ bool subsetSumToK3(int n, int k, vector<int> &arr){
         dp[i][0] = true;
     }
 
-    dp[0][arr[0]] = true;
+    if (arr[0] <= k) dp[0][arr[0]] = true;
 
     for (int index = 1; index < n; index++)
     {
@@ -92,8 +92,8 @@ bool subsetSumToK3(int n, int k, vector<int> &arr){
 }
 
 // Space optimization
-// TC -> O(N * target)
-// SC -> O(N * target) 
+// TC -> O(N) + O(N * target)
+// SC -> O(target) 
 bool subsetSumToK4(int n, int k, vector<int> &arr){
     vector<bool> prev(k+1, 0);
 

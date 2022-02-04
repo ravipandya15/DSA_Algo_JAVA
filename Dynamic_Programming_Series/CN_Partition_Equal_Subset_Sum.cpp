@@ -8,8 +8,8 @@ int main()
 }
 
 // Tabulation
-// TC -> O(N * target)
-// SC -> O(N) + O(N * target) 
+// TC -> O(N)+ O(N * target)
+// SC -> O(N * target) 
 bool subsetSumToK(int n, int k, vector<int> &arr){
     vector<vector<bool>> dp(n, vector<bool>(k+1, 0));
 
@@ -19,7 +19,7 @@ bool subsetSumToK(int n, int k, vector<int> &arr){
         dp[i][0] = true;
     }
 
-    dp[0][arr[0]] = true;
+    if (arr[0] <= k) dp[0][arr[0]] = true;
 
     for (int index = 1; index < n; index++)
     {

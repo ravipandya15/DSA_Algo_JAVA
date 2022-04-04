@@ -7,6 +7,7 @@ int main()
 {
     return 0;
 }
+
 string shortestSupersequence(string s, string t)
 {
     // lcs code

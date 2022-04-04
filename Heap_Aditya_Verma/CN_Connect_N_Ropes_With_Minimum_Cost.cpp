@@ -10,6 +10,7 @@ int main()
 
 long long connectRopes(int* arr, int n)
 {
+    // it's better to create Priority Queue of Long Long -> GFG par int thi test cases pass nathi thata
     priority_queue<int, vector<int>, greater<int>> mini;
     for (int i = 0; i < n; i++)
     {

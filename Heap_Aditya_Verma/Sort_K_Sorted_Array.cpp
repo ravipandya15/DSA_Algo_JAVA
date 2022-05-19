@@ -16,7 +16,9 @@ vector<int> sortKSortedArray(vector<int> nums, int k)
 {
     int n = nums.size();
     int index = 0;
-    priority_queue<int> pq;
+    priority_queue<int> pq; // it should be min Heap not max Heap
+    // min heap
+    priority_queue<int, vector<int>, greater<int>> mini;
     for (int i = 0; i < n; i++)
     {
         pq.push(nums[i]);

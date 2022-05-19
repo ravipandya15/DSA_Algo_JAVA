@@ -44,6 +44,7 @@ int solve(int index, vector<int> &heights, vector<int> &dp)
 // SC -> O(N) + O(N)
 int frogJump2(int n, vector<int> &heights)
 {
+    // dp(n) will also work
     vector<int> dp(n+1, -1);
     return solve(n - 1, heights, dp);
 }

@@ -139,7 +139,7 @@ int print_longestIncreasingSubsequence(int arr[], int n)
     vector<int> dp(n, 1);
     vector<int> hash(n, 0);
     int maxi = 1;
-    int last_index = 1;
+    int last_index = 0;
 
     for (int i = 0; i < n; i++)
     {

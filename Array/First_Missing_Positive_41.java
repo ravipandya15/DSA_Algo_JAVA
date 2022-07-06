@@ -6,9 +6,10 @@ public class First_Missing_Positive_41 {
         // Ans will always in range of [1, n+1] where n is length of array
         int n = nums.length;
         // change negative value to 0
-        for (int num : nums)
+        // when we need to change value of array then we can't use foreach loop
+        for (int i = 0; i < n; i++)
         {
-            if (num < 0) num = 0;
+            if (nums[i] < 0) nums[i] = 0;
         }
 
         // which ever value is covered, change the val - 1 position to -ve number

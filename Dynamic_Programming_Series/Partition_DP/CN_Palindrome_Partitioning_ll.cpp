@@ -22,6 +22,7 @@ bool isPalindrome(int i, int j, string str)
     }
     return true;
 }
+
 int solve(int i, int n, string &str, vector<int> &dp)
 {
     // base case

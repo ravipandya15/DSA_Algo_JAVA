@@ -26,6 +26,7 @@ int solve(int i, int j, vector<int> &cuts)
 // Recursion
 // TC -> Exponential
 int cost_1(int n, int c, vector<int> &cuts){
+    // c is the size oof cuts array
     cuts.push_back(n);
     cuts.insert(cuts.begin(), 0);
     sort(cuts.begin(), cuts.end());

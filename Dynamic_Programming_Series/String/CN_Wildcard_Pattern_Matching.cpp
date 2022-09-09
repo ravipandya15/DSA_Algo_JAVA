@@ -32,7 +32,7 @@ bool solve(int i, int j, string pattern, string text)
     {
         return solve(i - 1, j, pattern, text) | solve(i, j - 1, pattern, text);
     }
-    else
+    else // not matching
     {
         return false;
     }

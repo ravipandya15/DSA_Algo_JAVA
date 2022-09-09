@@ -17,7 +17,7 @@ vector<int> divisibleSet(vector<int> &arr){
     int maxi = 1;
     int last_index = 0;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // i = 1; i < n; i++ will also work
     {
         hash[i] = i;
         for (int prev = 0; prev < i; prev++)

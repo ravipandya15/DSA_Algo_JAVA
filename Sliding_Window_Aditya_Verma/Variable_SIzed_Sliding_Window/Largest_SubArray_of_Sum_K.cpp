@@ -4,7 +4,7 @@
 using namespace std;
 
 
-/// Very Very Most Important Point
+/// Very Very Most Important point
 
 // this approach will only work if all iteams are +ve.
 

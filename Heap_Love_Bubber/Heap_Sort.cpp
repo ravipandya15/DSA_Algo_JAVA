@@ -16,7 +16,7 @@ vector<int> heapSort(vector<int> &arr, int n)
         size--;
 
         // step 3: call heapify function
-        heapify(arr, n, 1);
+        heapify(arr, n, 1); // I think need to pass size in hepify -> as size is updated every time
     }
 }
 

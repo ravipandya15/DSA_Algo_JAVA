@@ -35,7 +35,7 @@ public:
 
     bool find(string &word, int ind, Trie* cur)
     {
-        if (ind == word.size()) return cur->isEnd;
+        if (ind == word.size()) return cur->isEnd; // IMP
 
         if (word[ind] == '.')
         {

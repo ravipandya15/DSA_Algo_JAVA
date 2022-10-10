@@ -8,6 +8,9 @@ int main()
     return 0;
 }
 
+//A duplicate removal consists of choosing two adjacent and equal letters and removing them.
+
+
 // TC -> O(N)
 // SC -> O(N)
 string removeDuplicates(string s) {

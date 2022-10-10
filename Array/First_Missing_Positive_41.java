@@ -31,7 +31,7 @@ public class First_Missing_Positive_41 {
 
         for (int i = 1; i <= n; i++)
         {
-            if (nums[i - 1] > 0) return i;
+            if (nums[i - 1] >= 0) return i; // >= 0 is IMP
         }
         return n + 1;
     }

@@ -33,7 +33,7 @@ Node *removeDuplicates(Node *head)
 
     while (cur != NULL)
     {
-        if (map.find(cur->data) == map.end())
+        if (map.find(cur->data) == map.end()) // check this it should be != map.end()
         {
             prev->next = cur->next;
             Node* nodeToDelete = cur;

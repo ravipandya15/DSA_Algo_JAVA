@@ -35,7 +35,10 @@ int myAtoi(string s) {
 
     while (i < s.size()) // as n now changes because we removed extra whitespaces
     {
-        if (s[i] == ' ' || !isdigit(s[i])) break;
+        // In Java to check is character is digit or not
+        // int codepoint1 = 55;
+        // boolean check1 = Character.isDigit(codepoint1);
+        if (s[i] == ' ' || !isdigit(s[i])) break;  
         ans = ans * 10 + (s[i] - '0');
 
         if (sign == -1 && -1 * ans < mini) return mini;

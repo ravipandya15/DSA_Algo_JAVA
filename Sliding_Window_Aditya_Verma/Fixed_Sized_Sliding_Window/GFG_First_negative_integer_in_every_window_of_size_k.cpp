@@ -10,7 +10,7 @@ int main()
 
 vector<long long> printFirstNegativeInteger(long long int A[], long long int N, long long int K) {
     vector<long long> ans;
-    deque<long long> dequeue;
+    deque<long long> deque;
     int i = 0;
     int j = 0;
 
@@ -19,7 +19,7 @@ vector<long long> printFirstNegativeInteger(long long int A[], long long int N, 
         // calculation
         if (A[j] < 0)
         {
-            dequeue.push_back(A[j]);
+            deque.push_back(A[j]);
         }
 
         if (j-i+1 < K)
@@ -29,20 +29,20 @@ vector<long long> printFirstNegativeInteger(long long int A[], long long int N, 
         else if (j - i + 1 == K)
         {
             // ans from calculation
-            if (dequeue.empty())
+            if (deque.empty())
             {
                 ans.push_back(0);
             }
             else
             {
-                ans.push_back(dequeue.front());
+                ans.push_back(deque.front());
             }
 
 
             // slide the window
-            if (A[i] == dequeue.front())
+            if (A[i] == deque.front())
             {
-                dequeue.pop_front();
+                deque.pop_front();
             }
 
             j++;
